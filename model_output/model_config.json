@@ -1,0 +1,27 @@
+{
+    "model_name": "Bidirectional LSTM for Toxic Comment Detection",
+    "model_type": "Multi-label Text Classification",
+    "label_columns": [
+        "toxic",
+        "severe_toxic",
+        "obscene",
+        "threat",
+        "insult",
+        "identity_hate"
+    ],
+    "max_length": 200,
+    "vocab_size": 50000,
+    "embedding_dim": 100,
+    "hidden_dim": 128,
+    "num_layers": 2,
+    "dropout": 0.35,
+    "thresholds": [
+        0.8800000000000001,
+        0.8600000000000001,
+        0.9000000000000001,
+        0.7800000000000001,
+        0.8800000000000001,
+        0.8800000000000001
+    ],
+    "cleaning": "Lowercase; replace URLs and emails; retain alphanumeric characters and apostrophes."
+}
